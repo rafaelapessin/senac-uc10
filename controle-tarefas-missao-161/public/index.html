@@ -1,0 +1,44 @@
+<!-- index.html — estrutura da página 
+Define os elementos da interface: título, formulário para cadastrar tarefas, campo de descrição, botão de cadastro e lista de tarefas.
+É a estrutura da aplicação, como se fosse o esqueleto de uma página web. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">ORGANIZAÇÃO PESSOAL</p>
+      <h1>Controle de tarefas</h1>
+      <p class="subtitle">Um passo de cada vez. Organize o que precisa ser feito.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Nova tarefa</h2>
+      <form id="task-form">
+        <label for="title">Título *</label>
+        <input id="title" name="title" maxlength="120" placeholder="Ex.: Estudar JavaScript" required>
+        <label for="description">Descrição (opcional)</label>
+        <textarea id="description" name="description" rows="3" placeholder="Detalhes da tarefa..."></textarea>
+        <button type="submit">Adicionar tarefa</button>
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <div class="section-heading">
+        <h2>Minhas tarefas</h2>
+        <span id="task-count" class="count">0 tarefas</span>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty">Nenhuma tarefa cadastrada ainda.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+* { box-sizing: border-box; }
+:root { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #27233a; background: #f5f3fb; }
+body { margin: 0; min-height: 100vh; padding: 42px 18px; }
+.container { width: min(760px, 100%); margin: 0 auto; }
+header { margin-bottom: 28px; }
+.eyebrow { color: #7652bd; font-size: .76rem; font-weight: 800; letter-spacing: .13em; }
+h1 { margin: 6px 0 8px; font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -.04em; }
+.subtitle { color: #777286; margin-top: 0; }
+.panel, .task-card { background: white; border: 1px solid #e8e3f1; border-radius: 18px; padding: 24px; box-shadow: 0 8px 28px #30205a0a; }
+h2 { margin: 0 0 18px; font-size: 1.15rem; }
+form { display: grid; gap: 10px; }
+label { font-size: .9rem; font-weight: 700; margin-top: 4px; }
+input, textarea { width: 100%; padding: 12px 14px; border: 1px solid #dcd6e8; border-radius: 10px; font: inherit; color: inherit; background: #fff; }
+input:focus, textarea:focus { outline: 3px solid #e8ddff; border-color: #8760d0; }
+button { border: 0; border-radius: 10px; padding: 12px 16px; font: inherit; font-weight: 750; cursor: pointer; }
+form button { color: white; background: #7652bd; margin-top: 6px; }
+button:hover { filter: brightness(.96); }
+#message { min-height: 1em; margin: 0; font-size: .9rem; color: #a13f53; }
+.tasks-section { margin-top: 32px; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.count { color: #777286; font-size: .9rem; }
+.task-list { list-style: none; padding: 0; display: grid; gap: 12px; }
+.task-card { display: flex; align-items: flex-start; gap: 12px; padding: 18px; }
+.task-card input[type="checkbox"] { width: 20px; height: 20px; margin-top: 3px; accent-color: #7652bd; flex: 0 0 auto; }
+.task-content { flex: 1; min-width: 0; }
+.task-title { font-weight: 750; overflow-wrap: anywhere; }
+.task-description { color: #777286; font-size: .92rem; margin: 6px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.task-card.completed .task-title { text-decoration: line-through; color: #928ca0; }
+.delete-button { background: #fff0f1; color: #a13f53; padding: 8px 10px; }
+.empty { text-align: center; padding: 24px; color: #777286; }
+@media (max-width: 520px) { body { padding: 26px 14px; } .panel { padding: 18px; } .task-card { padding: 14px; } }
