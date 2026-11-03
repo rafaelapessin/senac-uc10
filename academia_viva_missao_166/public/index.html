@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda com cursos online e presenciais na Academia Viva. Desenvolva habilidades para transformar sua carreira.">
+  <title>Academia Viva | Aprenda. Evolua. Conquiste.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="Academia Viva - início"><span class="brand-mark">a.</span><span>academia<span class="brand-light">viva</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#cursos">Cursos</a>
+        <a href="#sobre">A experiência</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato" class="nav-cta">Fale com a gente <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> APRENDIZADO QUE MOVE VOCÊ</div>
+          <h1>Seu próximo passo começa com <span>conhecimento.</span></h1>
+          <p class="hero-text">Cursos online e presenciais para transformar curiosidade em habilidade e potencial em novas oportunidades.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#cursos">Explore os cursos <span>↗</span></a>
+            <a class="button button-quiet" href="#sobre"><span class="play-icon">▶</span> Conheça a Academia</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>+</span></div>
+            <div><strong>Aprenda no seu ritmo</strong><small>Com apoio de quem entende</small></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração de uma pessoa estudando">
+          <div class="art-backdrop"></div>
+          <div class="floating-card card-top"><span class="mini-icon">✦</span><div><b>Seu futuro</b><small>em construção</small></div></div>
+          <div class="study-illustration">
+            <div class="window-top"><i></i><i></i><i></i><span>academia viva / learning</span></div>
+            <div class="screen-content"><div class="screen-line"></div><div class="screen-line short"></div><div class="screen-grid"><span>✦</span><span>↗</span><span>⌘</span></div><div class="screen-caption">APRENDER É<br><b>IR MAIS LONGE.</b></div></div>
+            <div class="person-head"></div><div class="person-hair"></div><div class="person-body"></div><div class="person-arm"></div>
+            <div class="desk"></div><div class="plant">♧</div>
+          </div>
+          <div class="floating-card card-bottom"><span class="success-icon">✓</span><div><b>Nova habilidade</b><small>desbloqueada!</small></div></div>
+          <div class="hero-sparkle sparkle-one">✳</div><div class="hero-sparkle sparkle-two">✦</div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>CONHECIMENTO PARA TODAS AS FASES</span><div class="hero-line"></div><span>ONLINE • PRESENCIAL • DO SEU JEITO</span></div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div><strong>+ de 30</strong><span>áreas de conhecimento</span></div>
+        <div><strong>100%</strong><span>foco na sua evolução</span></div>
+        <div><strong>2 formatos</strong><span>para aprender como preferir</span></div>
+        <div class="stats-note">Conhecimento que acompanha<br>seus próximos capítulos. <b>↗</b></div>
+      </div>
+    </section>
+
+    <section class="section courses-section" id="cursos">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">ESCOLHA SUA JORNADA</div><h2>Conhecimento para <span>ir além.</span></h2></div>
+          <p>Conteúdos relevantes, experiências práticas e aprendizado conectado com o que o mercado precisa.</p>
+        </div>
+        <div class="course-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filtrar cursos">
+            <button class="filter-button active" data-filter="Todos">Todos os cursos</button>
+            <button class="filter-button" data-filter="Online">Online</button>
+            <button class="filter-button" data-filter="Presencial">Presenciais</button>
+          </div>
+          <span class="course-count" id="courseCount">Carregando cursos...</span>
+        </div>
+        <div class="course-grid" id="courseGrid" aria-live="polite">
+          <div class="loading-card">Preparando oportunidades para você...</div>
+        </div>
+        <div class="center-action"><a href="#contato" class="text-link">Não encontrou o que procura? Converse com a gente <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="experience-section" id="sobre">
+      <div class="container experience-grid">
+        <div class="experience-visual">
+          <div class="experience-blob"></div>
+          <div class="experience-note note-one"><span>✦</span> Aprendizado na prática</div>
+          <div class="experience-note note-two"><b>01</b><span>Descubra<br>seu potencial</span></div>
+          <div class="big-letter">V<span>.</span></div>
+          <div class="visual-caption">IDEIAS QUE SE<br>TRANSFORMAM EM AÇÃO.</div>
+        </div>
+        <div class="experience-copy">
+          <div class="eyebrow">MAIS QUE UM CURSO</div>
+          <h2>Aprender abre portas. <span>Praticar transforma.</span></h2>
+          <p>Acreditamos que a educação deve fazer sentido na vida real. Por isso, unimos conteúdo atualizado, atividades práticas e experiências que ajudam você a avançar.</p>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-icon">◎</span><div><b>Flexibilidade para sua rotina</b><small>Estude online ou viva a experiência presencial.</small></div></div>
+            <div class="feature-item"><span class="feature-icon">✳</span><div><b>Aprendizado conectado ao mercado</b><small>Desenvolva competências que fazem diferença.</small></div></div>
+            <div class="feature-item"><span class="feature-icon">↗</span><div><b>Evolução com propósito</b><small>Aprenda algo novo e coloque em prática.</small></div></div>
+          </div>
+          <a class="button button-dark" href="#contato">Quero dar o próximo passo <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section" id="depoimentos">
+      <div class="container testimonial-inner">
+        <div class="eyebrow">QUEM APRENDE, COMPARTILHA</div>
+        <h2>Uma nova habilidade pode mudar <span>tudo.</span></h2>
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <blockquote>O curso me ajudou a organizar meus conhecimentos e enxergar novas possibilidades para minha carreira. Foi um passo importante para sair da intenção e partir para a prática.</blockquote>
+          <div class="testimonial-person"><div class="person-avatar">LC</div><div><b>Larissa C.</b><small>Aluna • Desenvolvimento Web</small></div><div class="stars">★★★★★</div></div>
+        </div>
+        <div class="testimonial-disclaimer">Depoimento ilustrativo para apresentação do layout.</div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy"><div class="eyebrow eyebrow-light">VAMOS CONVERSAR?</div><h2>O próximo capítulo da sua história pode começar <span>agora.</span></h2><p>Conte para a gente o que você deseja aprender. Nossa equipe pode ajudar a encontrar o curso ideal para seus objetivos.</p><div class="contact-detail"><span>✉</span> contato@academiaviva.com.br</div></div>
+        <form class="contact-form" id="leadForm">
+          <h3>Vamos encontrar seu próximo curso?</h3><p>Preencha seus dados e entraremos em contato.</p>
+          <label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Como podemos chamar você?" required minlength="2">
+          <label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required>
+          <label for="phone">Telefone <span>(opcional)</span></label><input id="phone" name="phone" type="tel" placeholder="(00) 00000-0000">
+          <label for="interest">Qual modalidade combina com você?</label><select id="interest" name="interest"><option value="Ainda não sei">Ainda não sei</option><option value="Online">Cursos online</option><option value="Presencial">Cursos presenciais</option></select>
+          <button class="button button-primary submit-button" type="submit">Quero saber mais <span>↗</span></button>
+          <div class="form-message" id="formMessage" role="status"></div>
+          <small class="privacy-note">Seus dados serão utilizados apenas para retorno sobre nossos cursos.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="#"><span class="brand-mark">a.</span><span>academia<span class="brand-light">viva</span></span></a><p>Aprenda. Evolua. Conquiste.</p><div class="footer-links"><a href="#cursos">Cursos</a><a href="#sobre">A experiência</a><a href="#contato">Contato</a></div></div><div class="container footer-bottom"><span>© 2026 Academia Viva. Todos os direitos reservados.</span><span>Feito para quem acredita no poder de aprender. ✦</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
