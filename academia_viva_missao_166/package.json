@@ -11,16 +11,25 @@
   },
   "dependencies": {
     "express": "^4.21.2",
-    "sqlite3": "^5.1.7"
+    "jest": "^30.5.2",
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^7.0.0",
-    "nodemon": "^3.1.9"
+    "supertest": "^7.0.0"
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
     "verbose": true
+  },
+  "overrides": {
+    "braces": "^3.0.3",
+    "cross-spawn": "^6.0.6",
+    "decode-uri-component": "^0.5.1",
+    "glob": "^14.0.2",
+    "minimatch": "^11.0.1",
+    "got": "^11.8.5"
   }
 }
